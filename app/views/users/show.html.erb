@@ -20,7 +20,7 @@
       <% order.line_items.each do |line_item| %>
 
       <tr>
-        <td class="item"><%= line_item.product.title %></td>
+        <td class="item"><%= link_to line_item.product.title, product_path(line_item.product.path) %></td>
         <td class="item middle"><%= line_item.fulfillment %></td>
         <td class="item"><%= line_item.active? %></td>
       </tr>

@@ -1,0 +1,41 @@
+<div class="white-nav">
+  <div>
+  <%= link_to image_tag("pluginboutique-logo", class: "pblogo"), root_path %>
+  </div>
+  <br>
+  <div>
+    <% if current_user %>
+      <div>
+        <%= link_to image_tag('account', class: 'pbicons'), user_path(current_user.fs_id) %>
+        <%= link_to image_tag('logout', class: 'pbicons'), logout_path, method: :delete %>
+      </div>
+    <% else %>
+      <%= link_to image_tag('login', class: 'pbicons'), login_path, { :remote => true, 'data-toggle' => 'modal', 'data-target' => '#modal-window', class: 'btn btn-primary btn-lg pbicons' } %>
+    <% end %>
+
+    <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="blue-nav">
+  <div class="blue-nav-links">
+    <a class="blue-nav-link-ind" href="#">Software</a>
+    <a class="blue-nav-link-ind" href="#">Free</a>
+    <a class="blue-nav-link-ind" href="#">Deals</a>
+    <a class="blue-nav-link-ind" href="#">Courses</a>
+    <a class="blue-nav-link-ind" href="#">Bundles</a>
+    <a class="blue-nav-link-ind" href="#">Manufacturers</a>
+  </div>
+
+</div>
+
+
+
+
+
+
+

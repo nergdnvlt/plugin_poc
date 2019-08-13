@@ -1,0 +1,14 @@
+<div class="login_form">
+<%= form_tag login_path class: 'form' do %>
+    <div class="login-content">
+      <div class="">
+        <%= label_tag :email %>
+        <%= text_field_tag :email %>
+      </div>
+
+      <div class="">
+        <%= submit_tag 'Login', class: "button"%>
+      </div>
+  </div>
+<% end %>
+</div>

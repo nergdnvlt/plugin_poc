@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PluginRedux</title>
+    <title>PluginPoc</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.0/fastspring-builder.min.js", id: "fsc-api", type: "text/javascript", data: { storefront: "machinefarm.test.onfastspring.com/popup-plugin", 'popup-webhook-received' => "popupWebhookReceived", "popup-closed" => "popupClose" } %>
   </head>
 
   <body>
+
+    <%= render "layouts/nav" %>
+
     <%= yield %>
+
   </body>
 </html>

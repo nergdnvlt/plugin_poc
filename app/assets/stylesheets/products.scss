@@ -1,3 +1,152 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.cart-button {
+  background-color: #017CA9;
+  border-color: #017CA9;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-text {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.fs-price {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.index-buy-button {
+  color: white;
+  background-color: #00a3dd;
+  height: 47px;
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  min-width: 200px;
+  font-weight: 900;
+  font-size: 18px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.ind-product-buy-container {
+  background-color: #00a3dd;
+  color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ind-cards {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ind-product-desc {
+  margin-left: 15px;
+}
+
+.ind-product-header {
+  background-color: #017CA9;
+  color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.ind-product-subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ind-product-page {
+  margin-left: 20.5%;
+  margin-right: 20.5%;
+  margin-top: 25px;
+}
+
+.ind-product-title {
+  margin-left: 15px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.price-desc {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.pricing {
+  margin-top: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.product-card {
+  min-width: 240px;
+  width: 30%;
+  min-height: 55px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D9D8D9;
+  margin: 10px;
+  text-align: left;
+  padding: 6px 10px 10px 10px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.product-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 130px;
+  min-width: 200px;
+}
+
+.product-page {
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 25px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product-title {
+  color: #007ca9;
+  text-decoration: none;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 1.142;
+  line-height: 1em;
+}

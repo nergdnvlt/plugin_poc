@@ -1,1 +1,38 @@
-<h1>Welcome!</h1>
+<div class="product-page">
+
+  <% @products.each do |product| %>
+    <div class="product-card">
+
+      <%= link_to product_path(product) do %>
+        <h6 class="product-title">
+          <%= link_to product.title, product_path(product.path) %>
+        </h6>
+      <% end %>
+
+      <p class="product-desc">
+        <span
+          data-fsc-item-path="<%= product.path %>"
+          data-fsc-item-description-summary>
+        </span>
+      </p>
+
+      <img
+        class="product-image"
+        data-fsc-item-path="<%= product.path %>"
+        data-fsc-item-image>
+      </img>
+
+      <button onclick="buyProd('<%= j product.path %>');" class="index-buy-button">
+        <span
+          data-fsc-item-path="<%= product.path %>"
+          data-fsc-item-price>
+        </span>
+      </button>
+
+    </div>
+  <% end %>
+
+</div>
+<script type="text/javascript">
+  fastspring.builder.tag({});
+</script>

@@ -1,0 +1,68 @@
+<div class="ind-product-page">
+
+  <div class="ind-product-header">
+    <div class="ind-product-subheader">
+      <div class="">
+        <h6 class="ind-product-title">
+          <%= @product.title %>
+        </h6>
+        <p class="ind-product-desc">
+          <span
+            data-fsc-item-path="<%= @product.path %>"
+            data-fsc-item-description-summary>
+          </span>
+        </p>
+      </div>
+      <div class="ind-product-icons">
+        <%= image_tag('os_icons', class: 'ind-icon') %>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ind-cards">
+
+    <div class="product-ind-image-container">
+      <img
+        class="product-ind-image"
+        data-fsc-item-path="<%= @product.path %>"
+        data-fsc-item-image>
+      </img>
+    </div>
+
+    <div class="ind-product-buy-container">
+      <div class="pricing">
+        <h6 class="price-desc">Your Price</h6>
+        <span class="fs-price"
+          data-fsc-item-path="<%= @product.path %>"
+          data-fsc-item-total>
+        </span>
+      </div>
+
+      <div class="quantity">
+        Quantity
+        <input id="fs-qty" type="number" value="1" onchange="adjQty('<%= j @product.path %>')">
+      </div>
+
+      <div class="buttons">
+        <button class="cart-button">
+          <%= image_tag('download_free') %>
+          <h6 class="cart-text">Trial Version</h6>
+        </button>
+
+      <button onclick="buyProdPage('<%= j @product.path %>');", class="cart-button">
+        <%= image_tag('cart') %>
+        <h6 class="cart-text">Add to Cart</h6>
+      </button>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+  fastspring.builder.tag({});
+</script>

@@ -1,0 +1,62 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.account-page {
+  margin-top: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.middle {
+  border-left-color: grey;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right-color: grey;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.order-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-color: grey;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding-top: 5px;
+}
+
+.order-header-titles {
+  border-bottom-color: grey;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.order-table {
+  border-style: solid;
+  border-color: grey;
+  border-width: 3px;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+}
+
+.item {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+tr {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

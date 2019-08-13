@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users, only: [:create]
       resources :orders, only: [:create]
+      resources :sessions, only: [:create]
       post '/update-user', to: 'users#update'
     end
   end

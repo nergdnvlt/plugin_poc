@@ -47,10 +47,20 @@ function popupWebhookReceived(fsData) {
 function popupClose( orderReference ) {
   if ( orderReference ) {
     fastspring.builder.reset()
-    // userUrl = `localhost:3000/${userId}`
-    window.location.replace(userId);
+    let user = {
+      user: userId
+    }
+    fetch('api/v1/sessions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(user)
+    }).then(function(response) {
+      window.location.replace(userId);
+      return response;
+    })
   } else {
-    window.location.replace("localhost:3000/");
+    window.location.replace("/");
   }
-
 }

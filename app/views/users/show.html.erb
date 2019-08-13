@@ -8,7 +8,7 @@
       <div class="order-header">
           <h6>Order ID: <%= order.order_id %></h6>
           <h6>Purchase Date: <%= local_time( order.created_at, "%m/%d/%Y at %l:%M%p") %></h6>
-          <h6>Order Total: $<%= order.total.round(2) %></h6>
+          <h6>Order Total: <%= number_to_currency(order.total) %></h6>
       </div>
 
       <tr class="order-header-titles">

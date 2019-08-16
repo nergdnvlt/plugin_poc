@@ -59,6 +59,20 @@
 
   </div>
 
+  <div class="ind-product-desc-container">
+    <div class="rating">
+      <b>Average rating (<%= rand(0..1000) %> votes): </b> <%= image_tag('rating', class: 'ind-prod-rating') %>
+    </div>
+
+    <div class="ind-product-desc-title">
+      <b><span data-fsc-item-path="<%= @product.path %>" data-fsc-item-display></span></b>
+    </div>
+
+    <div class="ind-product-desc-full">
+      <span data-fsc-item-path="<%= @product.path %>" data-fsc-item-description-full></span>
+    </div>
+  </div>
+
 
 </div>
 

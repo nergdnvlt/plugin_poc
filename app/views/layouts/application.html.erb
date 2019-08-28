@@ -7,7 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.0/fastspring-builder.min.js", id: "fsc-api", type: "text/javascript", data: { storefront: "machinefarm.test.onfastspring.com/popup-plugin", 'popup-webhook-received' => "popupWebhookReceived", "popup-closed" => "popupClose" } %>
+    <%= javascript_include_tag src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.0/fastspring-builder.min.js", id: "fsc-api", type: "text/javascript", data: { storefront: "machinefarm.test.onfastspring.com/popup-plugin", 'popup-webhook-received' => "popupWebhookReceived", "popup-closed" => "popupClose", "continuous" => "true" } %>
   </head>
 
   <body>
